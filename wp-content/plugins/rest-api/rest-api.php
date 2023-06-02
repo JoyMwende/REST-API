@@ -61,8 +61,8 @@ $namespace = 'products/v1';
   $controller = new Product_controller();
   register_activation_hook(__FILE__, array($controller, 'activate'));
 
-  add_action('rest_api_init', 'pms_routes');
-  function pms_routes(){
+  add_action('rest_api_init', 'products_routes');
+  function products_routes(){
     
 
     $product_routes = new ProductRoute();
